@@ -2,31 +2,34 @@
   box-sizing: border-box;
 }
 
-/* .section__heading {
-  display: flex;
-  max-height: 730px;
-} */
-
 .hero--heading {
   display: flex;
   flex-wrap: wrap;
-  max-width: 720px;
+  max-width: 730px;
+  padding-top: 70px;
 }
 
 .hero__text {
+  padding: 0 0 30px 0;
+  margin: 0;
+
   font-family: Inter;
   font-weight: 400;
   font-size: 18px;
-  line-height: 27px;
+  line-height: 28px;
   text-align: left;
   color: var(--main-text-color);
 }
 
-.hero__play-wrapper {
+.hero__btn-play-wrapper {
   position: absolute;
-  top: 70%;
-  left: 50%;
+  top: 55%;
+  left: 2%;
   transition: .5s;
+}
+
+.hero__play-img {
+  z-index: 1000;
 }
 
 .play--pulse {
@@ -80,8 +83,32 @@
   display: flex;
 }
 
+.hero__top {
+  display: flex;
+}
+
+.hero__scroll-inline {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.hero__scroll-icon {
+  width: 20px;
+  height: 20px;
+  border-top: 4px solid var(--main-theme-color);
+  border-right: 4px solid var(--main-theme-color);
+  transform: rotate(135deg);
+}
+
 .hero__right-block {
-  margin-left: 150px;
+  display: flex;
+  margin-left: 90px;
+}
+
+.hero__left-block {
+  display: flex;
+  flex-direction: column;
 }
 
 .hero__img {

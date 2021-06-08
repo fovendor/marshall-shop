@@ -1,0 +1,21 @@
+.products {
+  margin-top: 80px;
+}
+
+.products__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.products__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 57px;
+  width: 335px;
+  height: 374px;
+
+  border: 2px solid #DABB90;
+  border-radius: 3px;
+}

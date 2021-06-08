@@ -1,0 +1,16 @@
+.footer--container {
+  padding-top: 50px;
+}
+
+.footer__list {
+  display: flex;
+
+}
+
+.footer__column:not(:first-child) {
+  margin-left: 150px;
+}
+
+.footer--first-column {
+  transform: translateY(-30px);
+}
