@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  background: transparent;
+}
+
+.header__top {
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding-top: 81px;
+}
+
+.header__nav-list {
+  display: flex;
+}
+
+.header__nav-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.header__icons {
+  display: flex;
+}
+
+.header__icon--shop {
+  margin-left: 26px;
+}

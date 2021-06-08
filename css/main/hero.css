@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+}
+
+/* .section__heading {
+  display: flex;
+  max-height: 730px;
+} */
+
+.hero--heading {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 720px;
+}
+
+.hero__text {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: left;
+  color: var(--main-text-color);
+}
+
+.hero__about {
+  display: flex;
+}
+
+.hero__right-block {
+  margin-left: 150px;
+}
+
+.hero__img {
+  border-radius: 3px;
+}

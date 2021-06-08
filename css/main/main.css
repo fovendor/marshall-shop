@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'DrukCyr';
+  src: url('/fonts/DrukCyr-Bold.woff2') format('woff2'),
+    url('/fonts/DrukCyr-Bold.woff') format('woff');
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DrukCyr';
+  src: url('/fonts/DrukCyr-Super.woff2') format('woff2'),
+    url('/fonts/DrukCyr-Super.woff') format('woff');
+  font-display: swap;
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-Regular.woff') format('woff'),
+    url('/fonts/Inter-Regular.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('/fonts/Inter-LightBETA.woff') format('woff'),
+    url('/fonts/Inter-LightBETA.woff2') format('woff2');
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+
+:root {
+  /* main color of elements on the page */
+  --main-bg-page-color: #1A1F24;
+  --focus-outline-color: #DABB90;
+  --main-theme-color: #DABB90;
+  --section-heading-color: #DABB90;
+  --main-text-color: #9C9C9C;
+}
+
+html {
+  font-family: sans-serif;
+  background-color: var(--main-bg-page-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+:focus {
+  outline: 2px solid var(--focus-outline-color);
+}
+
+.main-screen::before {
+  content: '';
+  margin: 0;
+  padding: 0;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  background-image: url('/img/hero/bg.jpg');
+  filter: blur(5px);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1399px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section-heading {
+  font-family: DrukCyr;
+  font-weight: 900;
+  font-size: 90px;
+  line-height: 91px;
+  letter-spacing: 5px;
+  text-align: left;
+  color: var(--section-heading-color);
+}
