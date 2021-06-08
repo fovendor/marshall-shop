@@ -64,14 +64,13 @@ ul {
 
 .main-screen::before {
   content: '';
-  margin: 0;
-  padding: 0;
+  position: absolute;
   left: 0; right: 0;
   top: 0; bottom: 0;
-  background-image: url('/img/hero/bg.jpg');
-  filter: blur(5px);
-  background-repeat: no-repeat;
-  background-size: cover;
+  z-index: -1;
+
+  background: url('/img/hero/bg.jpg') center / cover no-repeat;
+  filter: blur(5px) opacity(20%);
 }
 
 .container {
