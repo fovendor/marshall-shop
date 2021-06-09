@@ -44,19 +44,21 @@
               </ul>
             </nav>
             <div class="header__icons">
-              <div class="header__icon-img header__icon--find">
+              <a class="header__icon-img" href="#">
                 <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#DABB90" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  <path d="M21 20.9999L16.65 16.6499" stroke="#DABB90" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                  </svg>
-              </div>
-              <div class="header__icon-img header__icon--shop">
+                  <g class="header__icon-find-fill" clip-path="url(#clip0)">
+                    <path d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z" stroke="#DABB90" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21 20.9999L16.65 16.6499" stroke="#DABB90" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </g>
+                </svg>
+              </a>
+              <a class="header__icon-img header__icon--shop" href="#">
                 <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z" stroke="#DABB90" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="#DABB90" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                   <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="#DABB90" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
-              </div>
+              </a>
             </div>
           </div>
         </div>
@@ -81,7 +83,7 @@
             <div class="hero__right-block">
               <div class="hero__btn-play-wrapper play--pulse">
                 <svg class="hero__play-img" width="60" height="60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <a href="#" class="hero__play-event" target="_blank">
+                  <a href="#" class="hero__play-event" id="buttonPlay" >
                   <g clip-path="url(#clip0)">
                      <!-- Ввёл невидимую фигуру footer__circle-link-wrapper, которая накрывает собой дырки в SVG и позволяет не мерцать курсору при наведении на отверстия картинки. Ссылка круглая. -->
                     <path class="play-path" fill-rule="evenodd" clip-rule="evenodd" d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60ZM45.2659 30.5699C45.9416 30.1868 45.9416 29.2132 45.2659 28.8301L23.0933 16.2573C22.4266 15.8793 21.6 16.3608 21.6 17.1272L21.6 42.2728C21.6 43.0392 22.4266 43.5207 23.0933 43.1427L45.2659 30.5699Z" fill="#DABB90"/>
@@ -90,11 +92,13 @@
                   </a>
                 </svg>
               </div>
-              <img src="/img/hero/guitarists.jpg" alt="Guitarists playing on the scene" class="hero__img">
+              <div class="hero__script-container">
+                <img src="/img/hero/guitarists.jpg" alt="Guitarists playing on the scene" class="hero__img">
+              </div>
             </div>
           </div>
           <div class="hero__scroll-inline">
-            <a href="#" class="hero__scroll-icon">
+            <a href="#down-to-hero" class="hero__scroll-icon" id="down-to-hero">
               <!--  -->
             </a>
           </div>
@@ -103,47 +107,59 @@
     </section>
       <section class="products">
         <div class="container">
-          <ul class="products__list">
-            <li class="products__item">
+          <div class="products__list">
+            <a class="products__item" href="#">
               <div class="products__preview">
-                <img src="/img/products/headphones.png" alt="" class="product__img">
+                <img src="/img/products/headphones.png" alt="Photo headphone" class="product__img">
               </div>
               <div class="products__category-name">
                 headphones
               </div>
-            </li>
-            <li class="products__item">
+              <span class="products__more">
+                show more
+              </span>
+            </a>
+            <a class="products__item" href="#">
               <div class="products__preview">
-                <img src="/img/products/speakers.png" alt="" class="product__img">
+                <img src="/img/products/speakers.png" alt="Photo speaker" class="product__img">
               </div>
               <div class="products__category-name">
                 speakers
               </div>
-            </li>
-            <li class="products__item">
+              <span class="products__more">
+                show more
+              </span>
+            </a>
+            <a class="products__item" href="#">
               <div class="products__preview">
-                <img src="/img/products/accessories.png" alt="" class="product__img">
+                <img src="/img/products/accessories.png" alt="Photo accessorie cable 3.5mm" class="product__img">
               </div>
               <div class="products__category-name">
                 accessories
               </div>
-            </li>
-            <li class="products__item">
+              <span class="products__more">
+                show more
+              </span>
+            </a>
+            <a class="products__item" href="#">
               <div class="products__preview">
-                <img src="/img/products/amps.png" alt="" class="product__img">
+                <img src="/img/products/headphones.png" alt="Photo headphone" class="product__img">
               </div>
               <div class="products__category-name">
-                amps
+                headphones
               </div>
-            </li>
-          </ul>
+              <span class="products__more">
+                show more
+              </span>
+            </a>
+          </div>
         </div>
       </section>
       <section class="subscribe">
           <div class="container subscribe--container">
             <div class="subscribe__wrapper">
               <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="subscribe__form">
-                <h2>SIGN UP FOR OUR NEWSLETTER</h2>
+                <h2 class="subscribe__form-heading">SIGN UP FOR OUR NEWSLETTER</h2>
                 <label class="subscribe__label" for="email">Get 10 % off on your first order</label>
                 <div class="subscribe__input-inline">
                   <input type="email" class="subscribe__input" id="email" placeholder="your email">
@@ -210,5 +226,8 @@
       </div>
     </div>
   </footer>
+  <script src="/src/main.js"></script>
 </body>
 </html>
+
+

@@ -14,3 +14,42 @@
 .footer--first-column {
   transform: translateY(-30px);
 }
+
+.footer__white-link {
+  font-family: Helvetica;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22.82px;
+
+  color: #EDEDED;
+  transition: .5s;
+}
+
+.footer__social-link {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.78px;
+  text-decoration: underline;
+  color: var(--main-text-color);
+}
+
+.footer__copyright {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19.5px;
+  color: var(--main-text-color);
+}
+
+.footer__element:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.footer__element:last-child {
+  margin-bottom: 163px;
+}
+
+.footer__element--social:not(:last-child) {
+  margin-bottom: 15px;
+}

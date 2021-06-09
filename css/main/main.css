@@ -25,22 +25,32 @@
   font-style: normal;
 }
 
-:root {
   /* main color of elements on the page */
+:root {
   --main-bg-page-color: #1A1F24;
   --focus-outline-color: #DABB90;
   --main-theme-color: #DABB90;
   --section-heading-color: #DABB90;
   --main-text-color: #9C9C9C;
+  --second-text-color: #1A1F24;
   --main-btn--yellow: #DABB90;
   --main-btn--black: #1A1F24;
   --section-border-color: #9C9C9C;
   --white-link-color: #EDEDED;
 }
 
+  /* block size with description of a category or product */
+:root {
+  --product-width: 335px;
+  --product-height: 374px;
+}
+
 html {
   font-family: sans-serif;
   background-color: var(--main-bg-page-color);
+  --webkit-user-select: none;
+  user-select: none;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -81,6 +91,30 @@ ul {
   line-height: 70px;
   text-align: left;
   color: var(--section-heading-color);
+}
+
+/* Common styles for products__item Type Items */
+
+.products__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 30px;
+  width: var(--product-width);
+  height: var(--product-height);
+
+  border: 2px solid var(--main-theme-color);
+  border-radius: 3px;
+  transition: .1s;
+}
+
+.products__item:hover {
+  background-color: var(--main-theme-color);
+}
+
+.products__item:active {
+  box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,0.6);
 }
 
 .main-btn--yellow {

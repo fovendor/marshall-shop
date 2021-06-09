@@ -69,3 +69,19 @@
 .header__icon--shop {
   margin-left: 26px;
 }
+
+.header__icon-img:hover {
+  animation: icon-find-pulse .5s both infinite;
+}
+
+@keyframes icon-find-pulse {
+  0% {
+    transform: scale(1);
+  }
+  15% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

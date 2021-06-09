@@ -77,7 +77,7 @@
    transform: scale(1.2);
    opacity: 0;
   }
- }
+}
 
 .hero__about {
   display: flex;
@@ -101,6 +101,22 @@
   transform: rotate(135deg);
 }
 
+.hero__scroll-icon:hover {
+  animation: triangle-pulse .5s both infinite;
+}
+
+@keyframes triangle-pulse {
+  0% {
+    transform: translateY(0px) rotate(135deg);
+  }
+  45% {
+    transform: translateY(4px) rotate(135deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(135deg);
+  }
+}
+
 .hero__right-block {
   display: flex;
   margin-left: 90px;
@@ -118,4 +134,12 @@
   top: 428px;
 
   border-radius: 3px;
+}
+
+.play--hidden {
+  visibility: hidden;
+}
+
+#down-to-hero {
+  transition: .5s;
 }
