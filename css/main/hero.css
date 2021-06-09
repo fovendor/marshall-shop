@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+.hero--heading {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 730px;
+  padding-top: 70px;
+}
+
+.hero__text {
+  padding: 0 0 30px 0;
+  margin: 0;
+
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: left;
+  color: var(--main-text-color);
+}
+
+.hero__btn-play-wrapper {
+  position: absolute;
+  top: 55%;
+  left: 2%;
+  transition: .5s;
+}
+
+.hero__play-img {
+  z-index: 1000;
+}
+
+.play--pulse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+ }
+
+.play--pulse {
+  position: relative;
+  transition: .5s;
+ }
+
+.play--pulse:hover::before,
+.play--pulse:hover::after {
+  content: '';
+  position: absolute;
+  border: 1px solid #DABB90;
+  left: -20px;
+  right: -20px;
+  top: -20px;
+  bottom: -20px;
+  border-radius: 50%;
+  animation: pulse 1.2s linear infinite;
+  opacity: 0;
+}
+
+.play--pulse:hover::after {
+  animation-delay: .35s;
+}
+
+ @keyframes pulse {
+  0% {
+   transform: scale(0.5);
+   opacity: 0;
+  }
+  50% {
+   opacity: 1;
+  }
+  100% {
+   transform: scale(1.2);
+   opacity: 0;
+  }
+}
+
+.hero__about {
+  display: flex;
+}
+
+.hero__top {
+  display: flex;
+}
+
+.hero__scroll-inline {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.hero__scroll-icon {
+  width: 20px;
+  height: 20px;
+  border-top: 4px solid var(--main-theme-color);
+  border-right: 4px solid var(--main-theme-color);
+  transform: rotate(135deg);
+}
+
+.hero__scroll-icon:hover {
+  animation: triangle-pulse .5s both infinite;
+}
+
+@keyframes triangle-pulse {
+  0% {
+    transform: translateY(0px) rotate(135deg);
+  }
+  45% {
+    transform: translateY(4px) rotate(135deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(135deg);
+  }
+}
+
+.hero__right-block {
+  display: flex;
+  margin-left: 90px;
+}
+
+.hero__left-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__img {
+  height: 520px;
+  width: 690px;
+  left: 970px;
+  top: 428px;
+
+  border-radius: 3px;
+}
+
+.play--hidden {
+  visibility: hidden;
+}
+
+#down-to-hero {
+  transition: .5s;
+}
