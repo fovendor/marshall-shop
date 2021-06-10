@@ -37,6 +37,7 @@
   --main-btn--black: #1A1F24;
   --section-border-color: #9C9C9C;
   --white-link-color: #EDEDED;
+  --grey-link-color: #838688;
 }
 
   /* block size with description of a category or product */
@@ -115,6 +116,18 @@ ul {
 
 .products__item:active {
   box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,0.6);
+}
+
+.about-text {
+  padding: 0 0 30px 0;
+  margin: 0;
+
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: left;
+  color: var(--main-text-color);
 }
 
 .main-btn--yellow {
