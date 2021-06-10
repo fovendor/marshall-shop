@@ -87,10 +87,9 @@
     <section class="filter">
       <div class="container filter__container">
         <button class="accordion">FILTER</button>
-        <div class="panel">
-
-<!-- Чтобы кнопки оставались в нажатом состоянии, надо после клика через JS навешивать классы -->
-
+        <div class="panel" id="btnArray">
+<!-------------- In order for the buttons to remain in the pressed state,
+  after clicking through JS, assign the classes to the elements -------------->
           <a href="#" class="filter__btn main-btn--yellow">
             multi-room
           </a>
@@ -109,7 +108,7 @@
           <a href="#" class="filter__btn main-btn--yellow">
             Wi-Fi
           </a>
-          <a href="#" class="filter__btn main-btn--yellow">
+          <a href="#" class="filter__btn main-btn--yellow filter__btn--active">
             Bluetooth
           </a>
           <a href="#" class="filter__btn main-btn--yellow">
@@ -125,11 +124,11 @@
             Portable (Battery)
           </a>
         </div>
-
       </div>
 
     </section>
   </main>
   <script src="/src/accordeon.js"></script>
+  <script src="/src/filter.js"></script>
 </body>
 </html>

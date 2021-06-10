@@ -102,3 +102,9 @@
 .filter__btn:nth-child(4n) {
   margin-right: 0px;
 }
+
+.filter__btn--active {
+  background: var(--main-btn--yellow);
+  color: var(--main-btn--black);
+  border-radius: 3px;
+}
