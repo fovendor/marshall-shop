@@ -10,9 +10,10 @@
 }
 
 .hero__btn-play-wrapper {
-  position: absolute;
+  /* position: absolute;
   top: 55%;
-  left: 2%;
+  left: 2%; */
+  transform: translateX(1em) translateY(15em);
   transition: .5s;
 }
 
@@ -87,6 +88,10 @@
   border-top: 4px solid var(--main-theme-color);
   border-right: 4px solid var(--main-theme-color);
   transform: rotate(135deg);
+}
+
+.hero__scroll-icon:focus{
+  outline: none;
 }
 
 .hero__scroll-icon:hover {

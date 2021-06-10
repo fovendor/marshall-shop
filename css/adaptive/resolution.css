@@ -1,0 +1,117 @@
+@media (max-width: 1400px) {
+  .main-screen::before {
+    display: none;
+  }
+
+  .container {
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .footer--container {
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .subscribe__wrapper {
+    min-width: 1200px;
+  }
+
+  .subscribe__img {
+    transform: translateX(-200px);
+  }
+
+  .header__icons {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .item-card:nth-child(3n) {
+    margin-right: 0px;
+  }
+
+  .item-card:nth-child(4n) {
+    margin-top: 0px;
+    margin-right: 20px;
+  }
+
+  .products__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 100px;
+  }
+
+  .price__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 0px;
+  }
+
+  .headphones__right {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .container {
+    max-width: 1100px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .footer--container {
+    max-width: 1100px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .subscribe__wrapper {
+    max-width: 768px;
+  }
+
+  .products__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 50px;
+  }
+
+  .item-card:nth-child(3n) {
+    margin-right: 0px;
+  }
+
+  .item-card:nth-child(4n) {
+    margin-top: 0px;
+    margin-right: 20px;
+  }
+
+  .price__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 1087px) {
+  .item-card:nth-child(odd) {
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+
+  .item-card:nth-child(even) {
+    margin-top: 0px;
+    margin-right: 0px;
+  }
+
+  .price__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 0px;
+  }
+}

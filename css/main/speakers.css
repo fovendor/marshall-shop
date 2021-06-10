@@ -1,9 +1,20 @@
+.price__container {
+  max-width: 1400px;
+}
+
 .header__nav-link--noactive {
   color: var(--grey-link-color);
 }
 
+.speakers--heading {
+  font-size: 61px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
 .filter__container {
   max-width: 1400px;
+  margin-top: 0;
 }
 
 .header__bottom {
@@ -32,7 +43,7 @@
 }
 
 .speakers__text {
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   max-width: 678px;
 }
 
@@ -82,10 +93,12 @@
 .panel {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   max-height: 0;
+  margin-bottom: 20px;
 
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: max-height .4s cubic-bezier(.14,.54,0,1.04);
 }
 
 .filter__btn {
@@ -107,4 +120,95 @@
   background: var(--main-btn--yellow);
   color: var(--main-btn--black);
   border-radius: 3px;
+}
+
+.price__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+/* ----------------- card item and styles ----------------- */
+
+.price__item {
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.price__item:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.price__item:hover .price__more {
+  color: var(--second-text-color);
+}
+
+.price__item:hover .price__item-value {
+  color: var(--main-btn--black);
+}
+
+.price__item-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 81px;
+  margin-top: 14px;
+}
+
+.price__more {
+  padding-top: 5px;
+
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.36px;
+  color: var(--main-text-color);
+  transition: .3s;
+}
+
+.price__item-name {
+  margin: 0;
+}
+
+.price__item-value {
+  padding-top: 20px;
+
+  font-family: Helvetica;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22.82px;
+  color: var(--white-link-color);
+  text-transform: uppercase;
+  transition: .3s;
+}
+
+.subscribe__form-heading {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.subscribe__btn {
+  margin-top: 25px;
+  height: 58px;
+  width: 350px;
+  background-color: transparent;
+  border: 2px solid var(--main-btn--black);
+  transition: .3s;
+}
+
+.subscribe__btn-link-label {
+  color: var(--main-btn--black);
+}
+
+.subscribe__btn:hover {
+  background-color: var(--main-btn--black);
+}
+
+.subscribe__btn:hover .subscribe__btn-link-label {
+  color: var(--white-link-color);
 }

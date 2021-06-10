@@ -1,0 +1,51 @@
+.headphones__wrapper {
+  display: flex;
+  min-height: 411px;
+  margin-bottom: 150px;
+  margin-top: 210px;
+}
+
+.headphones__left {
+  display: flex;
+  height: 499px;
+  width: 557px;
+  transform: translateY(-120px) translateX(-45px);
+}
+
+.headphones__right {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  margin-left: 110px;
+  padding-top: 70px;
+}
+
+.headphones__img-shadow {
+  position: relative;
+  width: 80px;
+  height: 170px;
+  background: linear-gradient(87.72deg, rgba(218, 187, 144, 0) 0.57%, #DABB90 96.78%);
+  transform: translateY(355px) translateX(-60px);
+}
+
+.headphones__heading {
+  position: relative;
+
+  max-width: 625px;
+  font-family: Helvetica;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 41px;
+}
+
+.headphones__text {
+  max-width: 524px;
+
+  font-family: Helvetica;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--main-btn--black);
+  opacity: 0.65;
+  text-transform: uppercase;
+}
