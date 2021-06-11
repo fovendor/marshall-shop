@@ -11,7 +11,7 @@
   position: relative;
   align-items: flex-end;
   justify-content: space-between;
-  padding-top: 81px;
+  padding-top: 70px;
 }
 
 .header__bottom {
@@ -73,6 +73,11 @@
 }
 
 .header__icon--shop {
+  margin-left: 26px;
+}
+
+.header__icon--burger {
+  display: none;
   margin-left: 26px;
 }
 

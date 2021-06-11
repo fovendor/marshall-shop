@@ -1,32 +1,11 @@
 .subscribe__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 90px;
-  max-height: 322px;
-  padding: 0px 45px 70px 45px;
-
-  border-radius: 3px;
-  background-color: var(--main-theme-color);
-}
-
-.subscribe--container {
-  padding-bottom: 150px;
-  border-bottom: 2px solid var(--section-border-color);
+  margin-bottom: 150px;
 }
 
 .subscribe__input-inline {
   margin-top: 25px;
   max-height: 58px;
   display: flex;
-}
-
-.subscribe__form-heading {
-  max-width: 625px;
-  font-family: Helvetica;
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 41px;
 }
 
 .subscribe__label {

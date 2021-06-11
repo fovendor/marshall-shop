@@ -2,9 +2,12 @@
   padding-top: 50px;
 }
 
+.footer__logo-img {
+  transform: scale(.75) translateX(-35px);
+}
+
 .footer__list {
   display: flex;
-
 }
 
 .footer__column:not(:first-child) {
@@ -52,4 +55,8 @@
 
 .footer__element--social:not(:last-child) {
   margin-bottom: 15px;
+}
+
+.footer__social-icon {
+  display: none;
 }

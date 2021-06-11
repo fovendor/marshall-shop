@@ -25,6 +25,26 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/montserrat-semibold-webfont.woff2') format('woff2'),
+       url('/fonts/montserrat-semibold-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/fonts/montserrat-regular-webfont.woff2') format('woff2'),
+       url('/fonts/montserrat-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  }
+
   /* main color of elements on the page */
 :root {
   --main-bg-page-color: #1A1F24;
@@ -44,6 +64,8 @@
 :root {
   --product-width: 335px;
   --product-height: 374px;
+  --product-width-mobile: 333px;
+  --product-height-mobile: 58px;
 }
 
 html {
@@ -52,6 +74,12 @@ html {
   --webkit-user-select: none;
   user-select: none;
   scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 a {
@@ -77,10 +105,11 @@ ul {
 
   background: url('/img/hero/bg.jpg') center / cover no-repeat;
   filter: blur(5px) opacity(10%);
+  transform: scale(1.12);
 }
 
 .container {
-  max-width: 1399px;
+  max-width: 1400px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -88,7 +117,7 @@ ul {
 .section-heading {
   font-family: Helvetica;
   font-weight: 700;
-  font-size: 63px;
+  font-size: 62px;
   line-height: 70px;
   text-align: left;
   color: var(--section-heading-color);
@@ -96,12 +125,13 @@ ul {
 
 /* Common styles for products__item Type Items */
 
-.products__item {
+.item-card {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   padding-bottom: 30px;
+  padding-top: 10px;
   width: var(--product-width);
   height: var(--product-height);
 
@@ -110,12 +140,68 @@ ul {
   transition: .1s;
 }
 
-.products__item:hover {
+.item-card:hover {
   background-color: var(--main-theme-color);
 }
 
-.products__item:active {
+.item-card:active {
   box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,0.6);
+}
+
+.item-card:hover .products__more{
+  opacity: 1;
+}
+
+.item-card:hover .item-name {
+  color: var(--main-btn--black);
+}
+
+.item-name {
+  margin-top: 54px;
+
+  font-family: Helvetica;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22.82px;
+  color: var(--white-link-color);
+  text-transform: uppercase;
+  transition: .3s;
+}
+
+.item-more {
+  margin-top: 10px;
+  opacity: 0;
+
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.36px;
+  color: var(--second-text-color);
+  transition: .6s .05s linear;
+}
+
+/* --------------------------------------------- */
+/* Common styles for yellow container */
+
+.custom--container {
+  border-bottom: 2px solid var(--section-border-color);
+}
+
+.custom__wrapper {
+  margin-top: 90px;
+  max-height: 322px;
+  padding: 2px 45px 70px 45px;
+
+  border-radius: 3px;
+  background-color: var(--main-theme-color);
+}
+
+.custom-heading {
+  max-width: 625px;
+  font-family: Helvetica;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 41px;
 }
 
 .about-text {
