@@ -1,13 +1,14 @@
 .headphones__wrapper {
   display: flex;
   min-height: 411px;
+
   margin-bottom: 150px;
   margin-top: 210px;
 }
 
 .headphones__left {
   display: flex;
-  height: 499px;
+  min-height: 499px;
   width: 557px;
   transform: translateY(-120px) translateX(-45px);
 }

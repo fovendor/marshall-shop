@@ -56,3 +56,7 @@
 .footer__element--social:not(:last-child) {
   margin-bottom: 15px;
 }
+
+.footer__social-icon {
+  display: none;
+}

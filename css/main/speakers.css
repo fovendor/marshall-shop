@@ -54,15 +54,11 @@
 /* ---------------------------- details/summary ---------------------------- */
 
 .accordion {
-  background-color: transparent;
-  color: var(--main-theme-color);
   cursor: pointer;
   padding: 18px;
   margin: 20px 0 20px 0;
   width: 100%;
   border: none;
-  border-bottom: 2px solid #9C9C9C;
-  text-align: left;
   outline: none;
   transition: 0.4s;
 
@@ -70,6 +66,11 @@
   font-weight: 300;
   font-size: 24px;
   line-height: 30.4px;
+  text-align: left;
+
+  background-color: transparent;
+  color: var(--main-theme-color);
+  border-bottom: 2px solid #9C9C9C;
 }
 
 .accordion:after {
@@ -92,8 +93,7 @@
 
 .panel {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  flex-flow: row wrap;
   max-height: 0;
   margin-bottom: 20px;
 
@@ -102,6 +102,18 @@
 }
 
 .filter__btn {
+  margin-right: 20px;
+  margin-bottom: 20px;
+
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 20.3px;
+  color: var(--white-link-color);
+  text-transform: uppercase;
+}
+
+.filter__btn-more {
+  display: none;
   margin-right: 20px;
   margin-bottom: 20px;
 
@@ -212,3 +224,5 @@
 .subscribe__btn:hover .subscribe__btn-link-label {
   color: var(--white-link-color);
 }
+
+.footer__social-icon { display: none; }

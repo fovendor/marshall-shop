@@ -76,6 +76,11 @@
   margin-left: 26px;
 }
 
+.header__icon--burger {
+  display: none;
+  margin-left: 26px;
+}
+
 .header__icon-img:hover {
   animation: icon-find-pulse .5s both infinite;
 }

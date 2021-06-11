@@ -4,7 +4,7 @@
   }
 
   .container {
-    max-width: 1200px;
+    width: 1200px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -16,7 +16,7 @@
   }
 
   .subscribe__wrapper {
-    min-width: 1200px;
+    /* width: 1200px; */
   }
 
   .subscribe__img {
@@ -69,9 +69,9 @@
     padding-right: 20px;
   }
 
-  .subscribe__wrapper {
+  /* .subscribe__wrapper {
     max-width: 768px;
-  }
+  } */
 
   .products__list {
     display: flex;
