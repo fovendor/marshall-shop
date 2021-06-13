@@ -59,6 +59,7 @@
     max-width: 390px;
     padding: 0px;
     margin: 10px 25px 0 25px;
+    overflow-x: hidden;
   }
 
   .products__list {
@@ -177,10 +178,6 @@
   .headphones__img-shadow { display: none; }
 
   .headphones__left { display: none;}
-
-  .headphones__wrapper {
-
-  }
 
   .accordion {
     padding: 0;

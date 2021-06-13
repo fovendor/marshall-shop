@@ -1,0 +1,39 @@
+.wrapper {
+  padding: 30px;
+  min-height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: transparent;
+}
+
+.swiper-pagination {
+  display: flex;
+  justify-content: flex-start;
+	position: absolute;
+	margin: 0;
+}
+
+.swiper-pagination-bullet {
+  display: block;
+	border-radius: 2px;
+	width: 40px;
+	height: 5px;
+	opacity: 1;
+	background: #796c59;
+
+  transition: .5s;
+}
+
+.swiper-pagination-bullet-active {
+  display: block;
+	border-radius: 2px;
+	width: 81px;
+	height: 5px;
+	opacity: 1;
+	background: #dabb90;
+
+  transition: .5s;
+}

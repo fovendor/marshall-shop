@@ -74,13 +74,14 @@ html {
   --webkit-user-select: none;
   user-select: none;
   scroll-behavior: smooth;
+  max-height: 100%;
 }
-
+/*
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+} */
 
 a {
   text-decoration: none;
