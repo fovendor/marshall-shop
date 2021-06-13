@@ -2,18 +2,8 @@
   box-sizing: border-box;
 }
 
-.hero--heading {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 730px;
-  padding-top: 70px;
-}
-
-.hero__btn-play-wrapper {
-  /* position: absolute;
-  top: 55%;
-  left: 2%; */
-  transform: translateX(1em) translateY(15em);
+.swiper-btn-play {
+  transform: translateX(10em) translateY(15em);
   transition: .5s;
 }
 
@@ -131,6 +121,10 @@
 
 .play--hidden {
   visibility: hidden;
+}
+
+.footer__circle-link-wrapper {
+  cursor: pointer;
 }
 
 #down-to-hero {

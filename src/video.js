@@ -4,13 +4,13 @@
 */
 
 buttonPlay.onclick = function() {
-  let imgElement = document.querySelector('.hero__script-container');
-  let playElement = document.querySelector('.hero__btn-play-wrapper');
+  const imgElement = document.querySelector('.swiper__video-container');
+  const playElement = document.querySelector('.swiper-btn-play');
 
   const videoElement = document.createElement ('div');
 
   videoElement.innerHTML = '<iframe width="690" height="520" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
 
-  imgElement.replaceWith(videoElement);
   playElement.classList.add('play--hidden');
+  imgElement.replaceWith(videoElement);
 };

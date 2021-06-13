@@ -76,12 +76,12 @@ html {
   scroll-behavior: smooth;
   max-height: 100%;
 }
-/*
+
 body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-} */
+}
 
 a {
   text-decoration: none;
@@ -113,6 +113,7 @@ ul {
   max-width: 1400px;
   margin-right: auto;
   margin-left: auto;
+  min-width: 0;
 }
 
 .section-heading {
@@ -264,3 +265,4 @@ ul {
   background: rgba(255, 255, 255, 0.659);
   border: 2px solid #1A1F24;
 }
+
