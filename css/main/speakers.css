@@ -288,9 +288,20 @@
 }
 
 .cart-item__btn-remove {
+  padding: 20px;
   cursor: pointer;
 }
 
 .table-bordered .cart-item {
   background-color: blueviolet;
+}
+
+.cart-summary {
+  margin: 40px;
+  color: white;
+}
+
+.table-bordered {
+  margin: 40px;
+  color: white;
 }

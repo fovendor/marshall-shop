@@ -9,13 +9,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Marshall shop</title>
+  <link rel="stylesheet" href="/css/main/main.css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/header/header.css">
+  <link rel="stylesheet" href="/css/main/hero.css">
+  <link rel="stylesheet" href="/css/main/products.css">
+  <link rel="stylesheet" href="/css/main/subscribe.css">
+  <link rel="stylesheet" href="/css/footer/footer.css">
+  <link rel="stylesheet" href="/css/main/speakers.css">
+  <link rel="stylesheet" href="/css/main/headphones.css">
+  <link rel="stylesheet" href="/css/adaptive/resolution.css">
+  <link rel="stylesheet" href="/css/adaptive/mobile.css">
 </head>
 
 <body data-page="cart">
   <div class="container">
     <ul class="nav nav-pills">
       <li><a href="/speakers.html">Каталог</a></li>
-      <li class="active"><a href="cart.html">Корзина<span id="total-cart-count" class="badge"></span></a></li>
+      <li><a href="cart.html">Корзина<span id="total-cart-count" class="badge"></span></a></li>
     </ul>
     <div class="table-responsive">
       <table class="table table-hover table-bordered">
@@ -24,7 +35,7 @@
         </tbody>
       </table>
     </div>
-    <div>Итого: <span id="total-cart-summa">0</span> USD.</div>
+    <div class="cart-summary">Итого: <span id="total-cart-summa">0</span> USD.</div>
     <a class="btn btn-info" href="#">checkout</a>
   </div>
 
