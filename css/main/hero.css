@@ -3,7 +3,7 @@
 }
 
 .swiper-btn-play {
-  transform: translateX(10em) translateY(15em);
+  transform: translateX(7em) translateY(16em);
   transition: .5s;
 }
 
@@ -110,13 +110,18 @@
   flex-direction: column;
 }
 
-.hero__img {
+.swiper__img {
   height: 520px;
   width: 690px;
   left: 970px;
   top: 428px;
 
   border-radius: 3px;
+}
+
+.swiper__img-narrow {
+  height: 100%;
+  top: 428px;
 }
 
 .play--hidden {

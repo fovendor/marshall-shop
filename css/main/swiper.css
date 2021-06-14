@@ -4,12 +4,11 @@
 }
 
 .swiper-right {
-  margin-left: 150px;
+  margin-left: 90px;
 }
 
 .swiper-slide {
 	font-size: 18px;
-	background: #fff;
 	display: flex;
   flex-direction: column;
 }
@@ -48,4 +47,8 @@
   opacity: 1;
 	background: #dabb90;
   transition: .5s;
+}
+
+.play--hidden {
+  visibility: hidden;
 }

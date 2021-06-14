@@ -38,7 +38,7 @@
 
   .swiper-btn-play {
     position: relative;
-    left: 50%;
+    left: 35%;
     transform: translateY(25em);
   }
 
@@ -142,7 +142,7 @@
     padding-left: 20px;
   }
 
-  .hero__img { transform: scale(.6); }
+  .swiper__img { transform: scale(.6); }
 
   .swiper-btn-play {
     transform: scale(.5) translateY(16em) translateX(-3em);
