@@ -55,8 +55,12 @@
 }
 
 @media (max-width: 450px) {
+  html, body {
+    overflow-x: hidden;
+  }
+
   .container {
-    max-width: 390px;
+    width: 390px;
     padding: 0px;
     margin: 10px 25px 0 25px;
     overflow-x: hidden;
