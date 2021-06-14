@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1",
+    "name": "ACTON II BLUETOOTH",
+    "price": "309",
+    "img": "img/speakers/ACTON-II-BLUETOOTH.png"
+  },
+  {
+    "id": "2",
+    "name": "STANMORE II BLUETOOTH",
+    "price": "429",
+    "img": "img/speakers/STANMORE-II-BLUETOOTH.png",
+    "more": "with google assistant"
+  },
+  {
+    "id": "3",
+    "name": "WOBURN II BLUETOOTH",
+    "price": "619",
+    "img": "img/speakers/WOBURN-II-BLUETOOTH.png"
+  },
+  {
+    "id": "4",
+    "name": "STOCKWELL II",
+    "price": "239.99",
+    "img": "img/speakers/STOCKWELL-II.png",
+    "more": "portable"
+  },
+  {
+    "id": "5",
+    "name": "KILBURN II",
+    "price": "309",
+    "img": "img/speakers/KILBURN-II.png",
+    "more": "portable"
+  },
+  {
+    "id": "6",
+    "name": "TUFTON",
+    "price": "499",
+    "img": "img/speakers/TUFTON.png",
+    "more": "portable"
+  },
+  {
+    "id": "7",
+    "name": "ACTON II VOICE",
+    "price": "9999",
+    "img": "img/speakers/ACTON-II-VOICE.png",
+    "more": "with google assistant"
+  },
+  {
+    "id": "8",
+    "name": "STANMORE II VOICE",
+    "price": "9999",
+    "img": "img/speakers/STANMORE-II-VOICE.png",
+    "more": "with google assistant"
+  },
+  {
+    "id": "9",
+    "name": "ACTON MULTI-ROOM",
+    "price": "349",
+    "img": "img/speakers/ACTON-MULTI-ROOM.png"
+  },
+  {
+    "id": "10",
+    "name": "STANMORE MULTI-ROOM",
+    "price": "449",
+    "img": "img/speakers/STANMORE-MULTI-ROOM.png"
+  },
+  {
+    "id": "11",
+    "name": "WOBURN MULTI-ROOM",
+    "price": "599",
+    "img": "img/speakers/WOBURN-MULTI-ROOM.png"
+  }
+]
