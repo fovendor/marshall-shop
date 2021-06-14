@@ -81,6 +81,11 @@
   margin-left: 26px;
 }
 
+.header__icon--shop {
+  display: flex;
+  flex-direction: column;
+}
+
 .header__icon-img:hover {
   animation: icon-find-pulse .5s both infinite;
 }
