@@ -11,12 +11,13 @@
   <link rel="stylesheet" href="/css/main/products.css">
   <link rel="stylesheet" href="/css/main/subscribe.css">
   <link rel="stylesheet" href="/css/footer/footer.css">
-  <link rel="stylesheet" href="/css/adaptive/resolution.css">
-  <link rel="stylesheet" href="/css/adaptive/mobile.css">
+  <!-- <link rel="stylesheet" href="/css/adaptive/resolution.css"> -->
+  <!-- <link rel="stylesheet" href="/css/adaptive/mobile.css"> -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="/css/main/swiper.css">
 </head>
 <body>
-  <main class="main">
-    <section class="main-screen">
+<div class="main-screen">
       <header class="header">
         <div class="container">
           <div class="header__top">
@@ -70,119 +71,199 @@
           </div>
         </div>
       </header>
-      <section class="hero">
-        <div class="container">
-          <h1 class="section-heading hero--heading">
-            MAKING MUSIC WITH MARSHALL
-          </h1>
-          <div class="hero__about">
-            <div class="hero__left-block">
-              <p class="hero__text about-text">
-                We’re helping you learn music theory and essential techniques to take you from beginner to pro. Whether you’ve just picked up an instrument for the first time or are looking to fill in some gaps in your playing, Making Music with Marshall has everything to give you a helping hand.
-              </p>
-              <p class="hero__text about-text">
-                The series starts at the very beginning by explaining beats and rhythm, before moving on to cover chords, scales, song structures and much more. Best of all, it's all totally free.
-              </p>
-              <a href="#" class="hero__btn main-btn--yellow">
-                explore
-              </a>
-            </div>
-            <!-- <div class="hero__right-block"> -->
-              <div class="hero__btn-play-wrapper play--pulse">
-                <svg class="hero__play-img" width="60" height="60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <a href="#" class="hero__play-event" id="buttonPlay" >
-                  <g clip-path="url(#clip0)">
-                     <!-- Ввёл невидимую фигуру footer__circle-link-wrapper, которая накрывает собой дырки в SVG и позволяет не мерцать курсору при наведении на отверстия картинки. Ссылка круглая. -->
-                    <path class="play-path" fill-rule="evenodd" clip-rule="evenodd" d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60ZM45.2659 30.5699C45.9416 30.1868 45.9416 29.2132 45.2659 28.8301L23.0933 16.2573C22.4266 15.8793 21.6 16.3608 21.6 17.1272L21.6 42.2728C21.6 43.0392 22.4266 43.5207 23.0933 43.1427L45.2659 30.5699Z" fill="#DABB90"/>
-                    <circle class="footer__circle-link-wrapper" cx="30" cy="30" r="30" stroke="red" fill="transparent" stroke-width="0"/>
-                  </g>
-                  </a>
-                </svg>
-              </div>
-              <div class="hero__script-container">
-                <img src="/img/hero/guitarists.jpg" alt="Guitarists playing on the scene" class="hero__img">
-              </div>
-            <!-- </div> -->
-          </div>
-          <div class="hero__scroll-inline">
-            <a href="#down-to-hero" class="hero__scroll-icon" id="down-to-hero">
-              <!--  -->
-            </a>
-          </div>
-        </div>
-      </section>
-    </section>
-      <section class="products">
-        <div class="container">
-          <div class="products__list">
-            <a class="products__item item-card" href="#">
-              <div class="products__preview">
-                <img src="/img/products/headphones.png" alt="Photo headphone" class="product__img">
-              </div>
-              <div class="products__category-name item-name">
-                headphones
-              </div>
-              <span class="products__more item-more">
-                show more
-              </span>
-            </a>
-            <a class="products__item item-card" href="/speakers.html">
-              <div class="products__preview">
-                <img src="/img/products/speakers.png" alt="Photo speaker" class="product__img">
-              </div>
-              <div class="products__category-name item-name">
-                speakers
-              </div>
-              <span class="products__more item-more">
-                show more
-              </span>
-            </a>
-            <a class="products__item item-card" href="#">
-              <div class="products__preview">
-                <img src="/img/products/accessories.png" alt="Photo accessorie cable 3.5mm" class="product__img">
-              </div>
-              <div class="products__category-name item-name">
-                accessories
-              </div>
-              <span class="products__more item-more">
-                show more
-              </span>
-            </a>
-            <a class="products__item item-card" href="#">
-              <div class="products__preview">
-                <img src="/img/products/headphones.png" alt="Photo headphone" class="product__img">
-              </div>
-              <div class="products__category-name item-name">
-                headphones
-              </div>
-              <span class="products__more item-more">
-                show more
-              </span>
-            </a>
-          </div>
-        </div>
-      </section>
-      <section class="subscribe">
-          <div class="container custom--container">
-            <div class="subscribe__wrapper custom__wrapper">
-              <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="subscribe__form">
-                <h2 class="subscribe__form-heading custom-heading">SIGN UP FOR OUR NEWSLETTER</h2>
-                <label class="subscribe__label" for="email">Get 10 % off on your first order</label>
-                <div class="subscribe__input-inline">
-                  <input type="email" class="subscribe__input" id="email" placeholder="your email">
-                  <button type="submit" class="subscribe__btn main-btn--black">
-                    <span class="button-link-label">subscribe</span>
-                  </button>
+      <article class="swiper">
+        <div class="swiper-container container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h1 class="swiper-heading section-heading">MAKING MUSIC WITH MARSHALL</h1>
+              <div class="swiper-content">
+                <div class="swiper-left">
+                  <p class="swiper-text about-text">
+                    We’re helping you learn music theory and essential techniques to take you from beginner to pro. Whether you’ve just picked up an instrument for the first time or are looking to fill in some gaps in your playing, Making Music with Marshall has everything to give you a helping hand.
+                  </p>
+                  <p class="swiper-text about-text">
+                    The series starts at the very beginning by explaining beats and rhythm, before moving on to cover chords, scales, song structures and much more. Best of all, it's all totally free.
+                  </p>
+                  <a href="#" class="swiper-btn main-btn--yellow">explore</a>
                 </div>
-                <p class="subscribe__policy">
-                  BY SUBSCRIBING YOU ACCEPT OUR <a href="" class="subscribe__policy-link" target="_blank">PRIVACY POLICY</a>
-                </p>
-              </form>
-              <img src="/img/subscribe/element-form.png" alt="Image tattooed hand with phone, nails painted red" class="subscribe__img">
+                <div class="swiper-btn-play play--pulse">
+                  <svg class="hero__play-img hero__play-event" width="60" height="60" fill="none" xmlns="http://www.w3.org/2000/svg" id="buttonPlay">
+                    <!-- <a href="#" class="hero__play-event"> -->
+                    <g clip-path="url(#clip0)">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M30 60C46.5685 60 60 46.5685 60 30C60 13.4315 46.5685 0 30 0C13.4315 0 0 13.4315 0 30C0 46.5685 13.4315 60 30 60ZM45.2659 30.5699C45.9416 30.1868 45.9416 29.2132 45.2659 28.8301L23.0933 16.2573C22.4266 15.8793 21.6 16.3608 21.6 17.1272L21.6 42.2728C21.6 43.0392 22.4266 43.5207 23.0933 43.1427L45.2659 30.5699Z" fill="#DABB90"/>
+                      <circle class="footer__circle-link-wrapper" cx="30" cy="30" r="30" stroke="red" fill="transparent" stroke-width="0"/>
+                    </g>
+                    <!-- </a> -->
+                  </svg>
+                </div>
+                <div class="swiper-right swiper__video-container">
+                  <img src="/img/hero/guitarists.jpg" alt="Guitarists playing on the scene" class="swiper__img">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <h1 class="swiper-heading section-heading">MAKING MUSIC WITH MARSHALL</h1>
+              <div class="swiper-content">
+                <div class="swiper-left">
+                  <p class="swiper-text about-text">
+                    With the COVID-19 pandemic grinding on, Metallica offered fans a newly taped concert for an evening at the drive-in. The Saturday, August 29 screening, which took place in San Antonio and dozens of other cities, served as a reminder that life these days is all about moments, some of them fleeting.
+                  </p>
+                  <p class="swiper-text about-text">
+                    Indeed, prior to the show, the lot felt straight out of a real concert. Patrons milled between cars blasting Metallica, shirtless brahs did their thing and the faintest whiff of weed wafted in the air. Almost a concert cosplay, if you will.
+                  </p>
+                </div>
+                <div class="swiper-right">
+                  <img src="/img/hero/hetfield.jpg" alt="James Hatfield on the scene" class="swiper__img">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <h1 class="swiper-heading section-heading">MAKING MUSIC WITH MARSHALL</h1>
+              <div class="swiper-content">
+                <div class="swiper-left">
+                  <p class="swiper-text about-text">
+                    It is this English company that is considered the reference manufacturer of stage speakers, monitors, guitar amplifiers and sound equipment. It was thanks to Marshall that stacked composite amps were born.But fate has repeatedly tested the strength of the company, from the first days of life presented a serious illness to its creator James Marshall.
+                  </p>
+                  <p class="swiper-text about-text">
+                    In the lives of most new guitarists, there were budget "combo" from Laney, euphonious and powerful Vox with a lamp at the output, venerable and popular Fender ... But everyone dreamed of a unique Marshall. Its warm and enveloping sound cannot be confused with anything, thanks to this signature sound, hundreds of popular bands and artists were born.
+                  </p>
+                  <p class="swiper-text about-text">
+                    In mid-1923, a son, Jim, was born into the family of boxer James Marshall. At the age of five, the child was diagnosed with bone tuberculosis: the boy's bones turned out to be extremely fragile and sensitive to any stress. The only treatment in medicine at the time was complete observance of peace and the hospital bed actually took seven years of his childhood away from Jim.
+                  </p>
+                </div>
+                <div class="swiper-right">
+                  <img src="/img/hero/MarshallHistoryIn7.jpg" alt="Jim Marshall" class="swiper__img">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <h1 class="swiper-heading section-heading">MAKING MUSIC WITH MARSHALL</h1>
+              <div class="swiper-content">
+                <div class="swiper-left">
+                  <p class="swiper-text about-text">
+                    If you have ever attended a live concert of a rock band, jazz band or guitarist, you must have noticed that the stage is filled with huge sound boxes with a proud Marshall inscription.
+                  </p>
+                  <p class="swiper-text about-text">
+                    This gigantic architectural composition is the main source of sound: combo amplifiers and speakers, stacks connected in a single chain and penetrating the listener with kilowatts of powerful drive. And the Marshall emblem was not there by chance.
+                  </p>
+                  <a href="#" class="swiper-btn main-btn--yellow">explore</a>
+                </div>
+                <div class="swiper-right">
+                  <img src="/img/hero/refrigerator.jpg" alt="Refrigerator in style marshall" class="swiper__img swiper__img-narrow">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <h1 class="swiper-heading section-heading">MAKING MUSIC WITH MARSHALL</h1>
+              <div class="swiper-content">
+                <div class="swiper-left">
+                  <p class="swiper-text about-text">
+                    Limited edition steel Marshall Major II Steel Edition for true rock sound connoisseurs with deep bass and low distortion. The model can also be used as a headset for a smartphone.
+                  </p>
+                  <p class="swiper-text about-text">
+                    Marshall Major II Bluetooth Bluetooth headphones, capable of shaking any gadget wirelessly and giving up to 30 hours of sound on a single charge. But the best part is that the engineers left the customer with a choice: if desired, MAJOR II BLUETOOTH BLACK can also be used as a wired one - a jack-to-jack cable is supplied in the kit.
+                  </p>
+                  <a href="#" class="swiper-btn main-btn--yellow">explore</a>
+                </div>
+                <div class="swiper-right">
+                  <img src="/img/hero/MarshallHistoryIn22.jpg" alt="Bluetooth headphones and smartphone in the tattoed arm" class="swiper__img swiper__img-narrow">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <h1 class="swiper-heading section-heading">MAKING MUSIC WITH MARSHALL</h1>
+              <div class="swiper-content">
+                <div class="swiper-left">
+                  <p class="swiper-text about-text">
+                    We’re helping you learn music theory and essential techniques to take you from beginner to pro. Whether you’ve just picked up an instrument for the first time or are looking to fill in some gaps in your playing, Making Music with Marshall has everything to give you a helping hand.
+                  </p>
+                  <p class="swiper-text about-text">
+                    The series starts at the very beginning by explaining beats and rhythm, before moving on to cover chords, scales, song structures and much more. Best of all, it's all totally free.
+                  </p>
+                </div>
+                <div class="swiper-right">
+                  <img src="/img/hero/headphones.jpg" alt="Headphones in the tattoed arm" class="swiper__img">
+                </div>
+              </div>
             </div>
           </div>
-      </section>
-  </main>
+          <div class="swiper-pagination"></div>
+        </div>
+      </article>
+      <article class="hero__scroll-inline">
+        <a href="#down-to-hero" class="hero__scroll-icon" id="down-to-hero"> </a>
+      </article>
+</div>
+  <section class="products">
+    <div class="container">
+      <div class="products__list">
+        <a class="products__item item-card" href="#">
+          <div class="products__preview">
+            <img src="/img/products/headphones.png" alt="Photo headphone" class="product__img">
+          </div>
+          <div class="products__category-name item-name">
+            headphones
+          </div>
+          <span class="products__more item-more">
+            show more
+          </span>
+        </a>
+        <a class="products__item item-card" href="/speakers.html">
+          <div class="products__preview">
+            <img src="/img/products/speakers.png" alt="Photo speaker" class="product__img">
+          </div>
+          <div class="products__category-name item-name">
+            speakers
+          </div>
+          <span class="products__more item-more">
+            show more
+          </span>
+        </a>
+        <a class="products__item item-card" href="#">
+          <div class="products__preview">
+            <img src="/img/products/accessories.png" alt="Photo accessorie cable 3.5mm" class="product__img">
+          </div>
+          <div class="products__category-name item-name">
+            accessories
+          </div>
+          <span class="products__more item-more">
+            show more
+          </span>
+        </a>
+        <a class="products__item item-card" href="#">
+          <div class="products__preview">
+            <img src="/img/products/headphones.png" alt="Photo headphone" class="product__img">
+          </div>
+          <div class="products__category-name item-name">
+            headphones
+          </div>
+          <span class="products__more item-more">
+            show more
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="subscribe">
+      <div class="container custom--container">
+        <div class="subscribe__wrapper custom__wrapper">
+          <form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="subscribe__form">
+            <h2 class="subscribe__form-heading custom-heading">SIGN UP FOR OUR NEWSLETTER</h2>
+            <label class="subscribe__label" for="email">Get 10 % off on your first order</label>
+            <div class="subscribe__input-inline">
+              <input type="email" class="subscribe__input" id="email" placeholder="your email">
+              <button type="submit" class="subscribe__btn main-btn--black">
+                <span class="button-link-label">subscribe</span>
+              </button>
+            </div>
+            <p class="subscribe__policy">
+              BY SUBSCRIBING YOU ACCEPT OUR <a href="" class="subscribe__policy-link" target="_blank">PRIVACY POLICY</a>
+            </p>
+          </form>
+          <img src="/img/subscribe/element-form.png" alt="Image tattooed hand with phone, nails painted red" class="subscribe__img">
+        </div>
+      </div>
+  </section>
   <footer class="footer">
     <div class="container footer--container">
       <div class="footer__list">
@@ -246,5 +327,8 @@
     </div>
   </footer>
   <script src="/src/video.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="/src/swiper.js"></script>
+
 </body>
 </html>

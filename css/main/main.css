@@ -68,12 +68,17 @@
   --product-height-mobile: 58px;
 }
 
+:root {
+  --bgMainScreen: url('/img/hero/bg.jpg') center / cover no-repeat;
+}
+
 html {
   font-family: sans-serif;
   background-color: var(--main-bg-page-color);
   --webkit-user-select: none;
   user-select: none;
   scroll-behavior: smooth;
+  max-height: 100%;
 }
 
 body {
@@ -103,15 +108,17 @@ ul {
   top: 0; bottom: 0;
   z-index: -1;
 
-  background: url('/img/hero/bg.jpg') center / cover no-repeat;
+  background: var(--bgMainScreen);
   filter: blur(5px) opacity(10%);
   transform: scale(1.12);
+  transition: 1s;
 }
 
 .container {
   max-width: 1400px;
   margin-right: auto;
   margin-left: auto;
+  min-width: 0;
 }
 
 .section-heading {
@@ -263,3 +270,4 @@ ul {
   background: rgba(255, 255, 255, 0.659);
   border: 2px solid #1A1F24;
 }
+
